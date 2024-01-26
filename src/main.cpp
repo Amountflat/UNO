@@ -1,8 +1,17 @@
 #include <iostream>
+#include <uno.hpp>
+
+using namespace amo::uno;
 
 int main()
 {
-    std::cout << "Hello World!" << std::endl;
+    Deck deck;
+
+    std::cout << deck.GetOutput() << std::endl;
+
+    deck.Init();
+
+    std::cout << deck.GetOutput() << std::endl;
 
     return 0;
 }
